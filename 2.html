@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>APRENDER A APRENDER</title>
+  <link rel="stylesheet" href="1.css">
+</head>
+
+<body>
+
+  <div class="aurora"></div>
+  <div class="aurora2"></div>
+  <div class="stars"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+  <div class="shooting-star"></div>
+
+  <nav class="menu">
+    <img src="Captura-Photoroom.png">
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="2.html">Nosotros</a></li>
+      <li><a href="3.html">Solucion Tecnologica</a></li>
+      <li><a href="4.html">Evidencias</a></li>
+      <li><a href="5.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <!-- CUADRO DEL BANNER (SEPARADO) -->
+  <div class="lista">
+    <img src="BANNERS-01.png" alt="Banner Aprender a Aprender" style="width: 100%; border-radius: 8px; display: block;">
+  </div>
+
+  <div class="lista">
+
+    <h1>¿Quiénes somos?</h1>
+
+    <p>
+      Somos un grupo interesado en aprender y mejorar
+      nuestros conocimientos.
+    </p>
+
+    <p>
+      En esta página queremos compartir algunas ideas
+      relacionadas con el aprendizaje.
+    </p>
+
+    <h2>Aqui nuestr@s</h2>
+
+    <!-- SECCIÓN LADO A LA DO CONTROLADA POR CSS -->
+    <div class="contenido-interactivo">
+      
+      <div class="columna-botones">
+        <button onclick="mostrarImagen(1)">Mision</button>
+        <button onclick="mostrarImagen(2)">Vision</button>
+        <button onclick="mostrarImagen(3)">Obj Generales</button>
+        <button onclick="mostrarImagen(4)">Obj Especificos</button>
+        <button onclick="mostrarImagen(5)">Cronograma</button>
+        <button onclick="mostrarImagen(6)">Pregunta problema</button>
+      </div>
+
+      <div class="columna-imagen">
+        <img id="img1" src="astrid4-01.png" style="display:none;">
+        <img id="img2" src="astrid4-02.png" style="display:none;">
+        <img id="img3" src="astrid4-03.png" style="display:none;">
+        <img id="img4" src="astrid5-04.png" style="display:none;">
+        <img id="img5" src="astrid5-05.png" style="display:none;">
+        <img id="img6" src="astrid pregunta.png" style="display:none;">
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer class="pie-pagina">
+    <p>&copy; 2026 Aprender a Aprender - Colegio Venecia IED. Todos los derechos reservados.</p>
+    <div class="redes-footer">
+      <a href="https://www.instagram.com/" target="_blank" class="boton-red" title="Instagram">
+        <img src="insta.png" alt="Instagram">
+      </a>
+      <a href="https://www.facebook.com/" target="_blank" class="boton-red" title="Facebook">
+        <img src="face.png" alt="Facebook">
+      </a>
+    </div>
+  </footer>
+
+  <script>
+    function mostrarImagen(num) {
+      document.getElementById("img1").style.display = "none";
+      document.getElementById("img2").style.display = "none";
+      document.getElementById("img3").style.display = "none";
+      document.getElementById("img4").style.display = "none";
+      document.getElementById("img5").style.display = "none";
+      document.getElementById("img6").style.display = "none";
+
+      document.getElementById("img" + num).style.display = "block";
+    }
+  </script>
+
+</body>
+</html>
