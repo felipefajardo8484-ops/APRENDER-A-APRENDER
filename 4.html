@@ -51,8 +51,7 @@
     <button onclick="mostrarImagen(2)">#2</button>
     <button onclick="mostrarImagen(3)">#3</button>
     <button onclick="mostrarImagen(4)">#4</button>
-    <button onclick="mostrarImagen(5)">#5</button>
-    <button onclick="mostrarImagen(6)">Audio</button>
+    <button onclick="mostrarImagen(5)">Audio</button>
     
     <div class="lista">
 
@@ -69,13 +68,10 @@
       <img id="img4" src="evidencia4.jpg" style="display:none; width:100%; max-width:800px;">
       <p id="txt4" style="display:none;">Texto de la evidencia 4</p>
 
-      <img id="img5" src="evidencia5.jpg" style="display:none; width:100%; max-width:800px;">
-      <p id="txt5" style="display:none;">Texto de la evidencia 5</p>
-
-      <audio id="img6" controls style="display:none; margin: 20px auto;">
+      <audio id="img5" controls style="display:none; margin: 20px auto;">
         <source src="WhatsApp Audio 2026-09-07 at 8.08.42 PM.mp3" type="audio/mpeg">
       </audio>
-      <p id="txt6" style="display:none;">En este audio entrevistamos a un estudiante el cual quiso ayudarnos con la entrevista y nos hizo ayudar a ver que complicaciones hay en los diferentes grados.</p>
+      <p id="txt5" style="display:none;">En este audio entrevistamos a un estudiante el cual quiso ayudarnos con la entrevista y nos hizo ayudar a ver que complicaciones hay en los diferentes grados.</p>
 
     </div>
 
@@ -92,8 +88,6 @@
       </a>
     </div>
   </footer>
-</body>
-</html>
 
   <script>
 
@@ -104,14 +98,12 @@
       document.getElementById("img3").style.display = "none";
       document.getElementById("img4").style.display = "none";
       document.getElementById("img5").style.display = "none";
-      document.getElementById("img6").style.display = "none";
 
       document.getElementById("txt1").style.display = "none";
       document.getElementById("txt2").style.display = "none";
       document.getElementById("txt3").style.display = "none";
       document.getElementById("txt4").style.display = "none";
       document.getElementById("txt5").style.display = "none";
-      document.getElementById("txt6").style.display = "none";
 
       document.getElementById("img" + num).style.display = "block";
       document.getElementById("txt" + num).style.display = "block";
